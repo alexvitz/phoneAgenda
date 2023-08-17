@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.inputs {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  border-style: none;
+  outline: none;
+  border-width: 0px;
+  background-color: rgb(218, 219, 219);
+  padding-left: 10px;
+  border-radius: 14px;
+}
+
+.inputsInvalid {
+  @extend .inputs;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+  color: red;
+}
+
+.buttons {
+  width: 100%;
+  border-radius: 14px;
+  transition-duration: 0.4s;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+  margin: 5px 0 5px 0;
+}
+
+.buttons:hover {
+  background-color: rgb(218, 219, 219);
+}
+
+.newContactBtn {
+  @extend .buttons;
+  border-radius: 14px;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  background-color: #9304f0;
+  transition-duration: 0.7s;
+  border: none;
+  box-shadow: 0px 4px 6px #c4c4c4;
+}
+
+.newContactBtn:hover {
+  color: black;
+}
+
+.saveButton {
+  @extend .buttons;
+  background-color: #9304f0;
+  color: white;
+  border: none;
+}
+
+.saveButton:hover {
+  color: black;
+}
+
+.cancelButton {
+  @extend .buttons;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.cancelButton:hover {
+  color: black;
+}
+
+.detailsRow {
+  background-color: rgb(218, 219, 219);
+  height: fit-content;
+  border-radius: 14px;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+}
+
+.contactLetter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(218, 219, 219);
+  border-radius: 26px;
+  align-self: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.contactInfo {
+  margin-bottom: 0;
+  width: fit-content;
+  text-align: center;
+}
+
+.contactDisplayContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 12%;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 14px;
+  box-shadow: 5px 4px 10px 2px #c4c4c4;
+}
+
+.agendaImg {
+  width: 50px;
+  height: 50px;
+}
+
+.searchDiv {
+  border-radius: 14px;
+  padding: 5px;
+  box-shadow: 0px 4px 6px #c4c4c4;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.dropdownMenu {
+  position: absolute;
+  transform: translate3d(0px, 24px, 0px);
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+}
+
+.iconColor {
+  color: #9204f1;
+}
